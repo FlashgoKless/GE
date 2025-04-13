@@ -64,5 +64,45 @@ li {
 </style>
 ```
 
-данная изначально базовая структура. у нас есть неупорядоченный список (ul)
+В задании дана базовая структура. у нас есть неупорядоченный список (ul).
+Первое, что нужно сделать - проставим классы на теги ul, что бы разделить красные элементы и черные
+Пусть черные будут point, а красные - colored_point. 
+Так же добавим в тэг style два класса вместо li - li.colored_point и li.point. можно написать просто .point и .colored_point, разницы никакой.
+
+```
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <ul>
+            <li class="point">Пункт 1</li>   ← изменение
+            <li class="colored_point">Пункт 2</li>   ← изменение
+            <li class="point">Пункт 3</li>   ← изменение
+            <li class="colored_point">Пункт 4</li>   ← изменение
+        </ul>
+    </body>
+    <style>
+        li.point{  ← изменение
+        }
+        li.colored_point{  ← изменение
+        }
+    </style>
+</html>
+```
+
+накинем цвет в стили
+```
+    <style>
+        li.point{
+        color: black;
+        }
+        li.colored_point{
+            color: red;
+        }
+    </style>
+```
 
